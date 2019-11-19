@@ -1,0 +1,19 @@
+# Common Conventions
+
+lowercase and snake_case, constants in all caps
+PI = 3.14
+
+UpperCamelCase for classes
+__dont_touch__ variables "not meant to be touched"
+
+Data Types
+
+bool	True or False, less space to store in  memory
+int		integers
+str		a sequence/array of characters, in "" or ''
+
+Data Structures
+
+list	an ordered sequence of values
+dict	a collection of keys with associated values (unordered)
+
