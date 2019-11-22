@@ -16,4 +16,7 @@ Data Structures
 
 list	an ordered sequence of values
 dict	a collection of keys with associated values (unordered)
+		kinda like a variable with two sections.
 
+Variables can change type as well as value - Dynamically typed language
+None is how Python represents nothingness/null/no value. Define variables with no value.
