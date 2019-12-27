@@ -20,3 +20,5 @@ dict	a collection of keys with associated values (unordered)
 
 Variables can change type as well as value - Dynamically typed language
 None is how Python represents nothingness/null/no value. Define variables with no value.
+
+Escape sequences with backslash \n \\ \"
