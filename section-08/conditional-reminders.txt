@@ -1,0 +1,19 @@
+if <some condition is True>:
+	Do something, need at least on if
+elif <some other condition is True>:
+	do something else, if previous isn't already True, have lots if you need
+else:
+	do something, catch all, can only have once
+
+
+Naturally false things:
+Empty objects, empty strings, None and 0
+
+Comparison operators
+
+==
+!=
+>
+<
+>=
+<=

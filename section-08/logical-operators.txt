@@ -1,0 +1,21 @@
+Chain conditions together with logical operators
+
+and, 'Truthy' if a and b are true (conjunction)
+
+or, Truthy if a or b are true (disjunction)
+
+not, Truthy if the opposite of a is true (negation), flips the truthiness
+	if not is_weekend:
+		goToWork()
+
+is means literally the same object in memory
+== means the same value
+
+### Randomness
+
+from random import choice, randint
+
+print(randint(1, 3))
+
+ok_response = ['rock', 'paper', 'scissors']
+computer_choice = choice(ok_response)
