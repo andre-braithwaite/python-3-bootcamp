@@ -1,0 +1,70 @@
+Lists are ordered collections of elements.
+
+my_list.sort() doesn't return a value, it changes the ordering of the list that called it. <-- method
+sorted(my_list) returns a sorted version of the list, list remains unchanged. <-- function
+
+index counting forward starts at [0]
+counting backwards starts at [-1]
+
+Methods are "attached" to objects, functions are "floating"
+
+append - add item to the end of the list.
+extend - adds each value in a collection to the end of a list.
+insert - adds an item at a specific index in a list.
+insert(-1, 'item')
+
+clear - empties list
+pop - removes and returns last item if no index specified.
+remove - removes the first item in the list whos value is x
+
+
+index - return the index of the specified item in a list
+Can specify start and end range, inclusive index('my_element', 3, 7)
+
+count - return the number of times an element appears in a list
+reverse - reverses the item order on the list that called it.
+sort - sorts items in ascending order by default
+
+Common string methods
+Strings are like lists of characters
+
+join - make a new string with a specified string between each list item
+	'-'.join(my_list) puts spaces inbetween
+	can reverse this with split
+
+	my_list = ['A', 'B', 'C', 'C', 'D']
+	stringz = '-'.join(my_list) --> A-B-C-C-D
+	stringz2 = stringz.split('-') --> ['A', 'B', 'C', 'C', 'D']
+
+### Slicing (works on strings and lists!)
+makes a copy, not changing the original
+
+some_list[start:end:step]
+inclusive start point, exclusive end. just like range...
+
+give a negative start value to slice counting from the end
+from the front, it's the index number
+0 is first item, -1 would be start at the last item
+
+[:2] returns items at indexes 0 and 1
+[:-2] excludes the last 2 elements
+
+negative step values mean return the list backwards
+
+slice returns new list/string
+
+Can replace a slice with new elements
+
+my_list
+[1, 2, 3, 4, 5]
+
+my_list[1:4] = ['a', 'b', 'c', 'd']
+[1, 'a', 'b', 'c', 'd', 5]
+
+Bonus tip single line multiple assignment can be useful to swap elements
+Useful for algorithms
+
+names = ['George', 'Michael']
+print(names)
+names[0], names[1] = names[1], names[0]
+print(names)
