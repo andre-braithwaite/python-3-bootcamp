@@ -1,7 +1,7 @@
 for item in iterable_object:
 	# do something with item
 
-iterable objects like, lists, strings, ranges
+iterable objects like lists, strings, ranges
 
 ranges generate sequences of numbers, normally for for loops.
 default starts and zero and excludes last number e.g. range(7)
