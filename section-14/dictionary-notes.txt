@@ -1,0 +1,63 @@
+Describe data with more detail than lists
+Unorderd
+
+keys are lables to describe a piece of data
+values represent the actual data
+
+List index number is like a key
+
+Pass in the key to retrieve the data e.g. friend['birthday']
+
+Methods
+
+values(), keys(), items()
+clear(), copy()
+
+new_dict = {}.fromkeys(['a','b', 'c'], None)
+or dict.fromkeys(['a','b', 'c'], None)
+
+iterable collection, value to set
+
+get() -> return the value or None if the key doesn't exist
+
+pop() -> given a key, removes the pair and returns the value. Must give a valid key.
+
+popitem() -> removes a random pair.
+
+update() ->
+
+dict1 = dict(a = 1, b = 2, c = 3)
+dict2.update(dict1)
+dict2.update(dict(e = 5))
+
+add the contents of dict1 to dict2, will overwrite with new value if key already exists
+
+add a value
+
+dict2['f'] = 6
+
+Dictionary comprehesions, iterate ove keys by default
+Build new dictionaries by modifying existing
+
+dict1 = {'a': 1, 'b': 2, 'c': 3}
+{key: value ** 2 for key, value in dict1.items()}
+# square the values
+# need to have _ : : for ... to keep it as a dictionary.
+
+{key.upper() for key in dict1}
+# returns a set of uppercase key 
+
+Make a dictionary from a list
+{num: num ** 2 for num in [1, 2, 3, 4, 5]}
+
+Combine lists or strings to make a dictionary
+
+l1 = ['a', 'b', 'c']
+l2 = [1, 2, 3]
+{l1[i]: l2[i] for i in range (0, 3)}
+
+# could also do 'ABC' and '123' and iterate strings
+
+Conditional comprehension
+{k: ('odd' if k % 2 != 0 else 'even') for k in range(1, 11)}
+
