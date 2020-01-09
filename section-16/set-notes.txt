@@ -1,0 +1,31 @@
+Unordered collections without duplicates
+Good way to remove duplicates from a list.
+
+my_set = {1, 2, 3, 4, 5}
+
+Set Methods
+
+my_set.add(6)
+my_set.remove(3) # will error if item doesn't exist
+my_set.discard(3) # won't error if no corresponding item
+copy(), clear() # same as with lists
+
+Maths operations
+
+Union - is in either
+
+set1 = {1, 2, 3, 4, 5, 6}
+set2 = {4, 5, 6, 7, 8, 9}
+
+set3 = set1 | set2
+# {1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+Intersect - is in both
+
+set4 = set1 & set2
+# {4, 5, 6}
+
+Set comprehensions
+
+comp = {_ * 2 for _ in set1}
+similar to list comprehensions or dictionary without the :

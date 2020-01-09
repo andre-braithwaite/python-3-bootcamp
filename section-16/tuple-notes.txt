@@ -1,0 +1,21 @@
+An ordered collection of items
+Unlike a list, it cannot be changed!
+Can't update or delete values
+
+tup1 = (1, 2, 3, 4, 5)
+can't do tup1[2] = 7 will error
+
+so why use it instead of a list? Tuples are faster. 
+Use if it's not going to change.
+
+months = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+
+Useful as keys in a dictionary
+
+Methods
+
+index(), count()
+(same as list)
+Can nest values and slice like lists as well
+
+(1, 2, 3, (4, 5), 6, 7)

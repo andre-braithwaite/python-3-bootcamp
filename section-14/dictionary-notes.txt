@@ -10,13 +10,15 @@ Pass in the key to retrieve the data e.g. friend['birthday']
 
 Methods
 
-values(), keys(), items()
+values(), keys(), 
+items() -> returns a collection (a view object technically) of tuples
 clear(), copy()
 
 new_dict = {}.fromkeys(['a','b', 'c'], None)
 or dict.fromkeys(['a','b', 'c'], None)
 
-iterable collection, value to set
+iterable collection, same value to set
+good for setting start conditions
 
 get() -> return the value or None if the key doesn't exist
 
@@ -45,7 +47,7 @@ dict1 = {'a': 1, 'b': 2, 'c': 3}
 # need to have _ : : for ... to keep it as a dictionary.
 
 {key.upper() for key in dict1}
-# returns a set of uppercase key 
+# returns a set of uppercase key, notice lack of :
 
 Make a dictionary from a list
 {num: num ** 2 for num in [1, 2, 3, 4, 5]}
@@ -61,3 +63,10 @@ l2 = [1, 2, 3]
 Conditional comprehension
 {k: ('odd' if k % 2 != 0 else 'even') for k in range(1, 11)}
 
+Convert lists of pairs into dictionaries
+
+person = [["name", "Richard"], ["job", "CEO"], ["city", "Palo Alto"]]
+
+{person[i][0]: person[i][1] for i in range(len(person))}
+{k: v for k, v in person}
+dict(person)
