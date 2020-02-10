@@ -1,0 +1,23 @@
+A bunch of related code we can re-use when invoked or "called"
+usually different input for varied output
+
+Compute similar procedures over and over
+print() is a built in function
+
+Abstract code into organised building blocks
+divide "work" into discrete tasks
+
+Need to explicitly state what is being returned (output from the function)
+What am I expecting to "get out" of this function?
+
+def name_of_function(param_a, param_b):
+	# block of code
+	return
+
+
+return will exit the function and remove it from the call stack, jumping to after where it was called.
+
+function parameters are only accessible in the scope of the function
+
+Parameters are variables in a method/function definition.
+	- Arguments are specific data passed into a parameter when it's called
